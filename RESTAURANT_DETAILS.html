@@ -1,0 +1,105 @@
+{% extends 'layout2.html' %}
+{% block body %}
+<style type="text/css">
+    body{
+        background-image: url('static/css/test.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .col1{
+        float: left;
+        width: 450px;
+        background: transparent;
+    }
+    .col2{
+        float: right;
+        width: 450px;
+        padding-right: -50px;
+        background: transparent;
+    }
+    .restaurant{
+        width: 1000px;
+    }
+</style>
+  <h1>Restaurant Details</h1>
+  {% from "FORMHELPERS.html" import render_field %}
+  <div class="restaurant">
+  <form method="POST" action="">
+    <div class="col1">
+    <div class="form-group">
+        {{render_field(form.restaurant_id, class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.restaurant_name, class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.location, class_="form-control")}}
+    </div>
+    <div class="form-group">
+        {{render_field(form.contact_no, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.item_1, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.price_1, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.item_2, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.price_2, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.item_3, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.price_3, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.item_4, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.price_4, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.item_5, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.price_5, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.item_6, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.price_6, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.item_7, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.price_7, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.item_8, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.price_8, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.item_9, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.price_9, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.item_10, class_="form-control")}}
+    </div>
+        <div class="form-group">
+        {{render_field(form.price_10, class_="form-control")}}
+    </div>
+  </div>
+</form>
+</div>
+    <p><input type="submit" class="btn btn-primary" value="Submit"></p>
+{% endblock %}

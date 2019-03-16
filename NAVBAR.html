@@ -1,0 +1,21 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<ul class="pager">
+  <li class="previous"><a class="btn btn-outline-success" href="/HOME">Home</a></li>
+  <li class="previous"><a class="btn btn-outline-success" href="/ABOUT_US">About Us</a></li>
+  {% if session.logged_in and session['user_id'] == '11111' %}
+  <li class="next"><a class="btn btn-outline-primary" href="/admin_dashboard">Dashboard</a></li>
+  <li class="next"><a href="/logout">Logout</a></li>
+  {% elif session.logged_in and session['user_id'] != '11111' %}
+  <li class="next"><a class="btn btn-outline-primary" href="/user_dashboard">Dashboard</a></li>
+  <li class="next"><a class="btn btn-outline-primary" href="/logout">Logout</a></li>
+  {% else %}
+  <li class="next"><a class="btn btn-outline-danger" href="/login">Login</a></li>
+  <li class="next"><a class="btn btn-outline-danger" href="/signup">Sign Up</a></li>
+  {% endif %}
+  <li class="next"><a class="btn btn-outline-warning" href="/diet_menu">Diet Menu</a></li>
+</ul>
+

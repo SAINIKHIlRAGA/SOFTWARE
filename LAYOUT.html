@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <link rel="stylesheet" type="text/css" href="{{C:\Users\nikhi\PycharmProjects\SOFTWARE\venv\Lib\site-packages\werkzeug\debug\shared\style.css}}">
+<style type="text/css">
+
+    body{
+        background-image: url('');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+}
+</style>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="">
+  </head>
+  <body>
+    {% include 'NAVIGATION_BAR.html' %}
+   <p><div class="container"></p>
+ {% include 'MESSAGES.html' %}
+    {% block body %}{% endblock %}
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+  </body>
+</html>

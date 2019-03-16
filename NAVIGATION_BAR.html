@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style type="text/css">
+    @-ms-viewport{
+        width : device-width;
+        initial-scale: 1;
+             }
+</style>
+<ul class="pager">
+    <li class="previous"><a class="btn btn-outline-success" href="/HOME">HOME</a></li>
+    <li class="previous"><a class="btn btn-outline-success" href="/ABOUT_US">ABOUT US</a></li>
+    {% if session.logged_in and session['user_id'] =='11111' %}
+     <li class="next"><a class="btn btn-outline-primary" href="/admin_dashboard">Admin Dashboard</a></li>
+  <li class="next"><a href="/LOGOUT">Logout</a></li>
+  {% elif session.logged_in and session['user_id'] != '11111' %}
+  <li class="next"><a class="btn btn-outline-primary" href="/user_dashboard">User Dashboard</a></li>
+  <li class="next"><a class="btn btn-outline-primary" href="/logout">Logout</a></li>
+  {% else %}
+  <li class="next"><a class="btn btn-outline-danger" href="/login">Login</a></li>
+  <li class="next"><a class="btn btn-outline-danger" href="/signup">Signup</a></li>
+  {% endif %}
+</ul>
+
+
+
+
+
+
+
+
+</ul>

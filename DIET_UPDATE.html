@@ -1,0 +1,19 @@
+{% extends 'layout2.html' %}
+{% block body %}
+<style type="text/css">
+   body{
+        background-image: url('static/css/test.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+</style>
+  <h1>DIET MENU Update</h1>
+  {% from "FORMHELPERS.html" import render_field %}
+  <form method="POST" action="">
+     <div class="form-group">
+        {{render_field(form.text,class_="form-control")}}
+    </div>
+    <p><input type="submit" class="btn btn-primary" value="Submit"></p>
+  </form>
+{% endblock %}
