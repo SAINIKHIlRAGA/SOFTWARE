@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS customer(
+userid int NOT NULL,
+password varchar(20) NOT NULL,
+name varchar(20) NOT NULL,
+PRIMARY KEY(userid))
+ENGINE=INNODB;

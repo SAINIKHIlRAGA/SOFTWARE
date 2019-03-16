@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS restuarant_managers(
+manager_id int NOT NULL,
+name varchar(20) NOT NULL,
+contact_no int NOT NULL,
+password varchar(20) NOT NULL,
+restaurant_id int NOT NULL,
+primary key(manager_id))
+ENGINE=INNODB;

@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS reports(
+id int AUTO_INCREMENT,
+review varchar(2000),
+restaurant_id int NOT NULL,
+restaurant_name varchar(20) NOT NULL,
+customer_id int NOT NULL,
+manager_id int,
+rating int NOT NULL,
+PRIMARY KEY(id))
+ENGINE=INNODB;

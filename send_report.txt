@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS send_report(
+id int NOT NULL AUTO_INCREMENT,
+user_id int NOT NULL,
+report_id int NOT NULL,
+rating int NOT NULL,
+review varchar(500) NOT NULL,
+PRIMARY KEY(id));
