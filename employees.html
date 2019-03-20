@@ -1,0 +1,33 @@
+
+    <meta charset="UTF-8">
+    <title>Employees</title>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+    {% if result %}
+
+    {% for row in result %}
+
+    {% endfor %}
+    {% endif %}
+<table id="employees" style="width:100%"><tbody><tr>
+        <th>id</th>
+        <th>name</th>
+        <th>age</th>
+    </tr><tr>
+        <td> {{ row.id }}</td>
+        <td> {{ row.name }}</td>
+        <td> {{ row.age }}</td>
+    </tr></tbody></table>

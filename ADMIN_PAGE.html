@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ADMIN</title>
+    <link rel="stylesheet" type="text/css" href="static/ADMIN_PAGE.css">
+</head>
+<body>
+<style>
+    *{
+    margin:0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    outline: none;
+}
+body{
+      background: url("") no-repeat top center;
+    height: 100vh;
+    background-size: cover;
+}
+.a{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 0 30px;
+}
+.main{
+    max-width: 1000px;
+    max-height: 800px;
+    margin: 0 auto;
+    background: rgba(0,0,0,0.8);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.11);
+    display: flex;
+    flex-direction: column;
+}
+.main1{
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: cyan;
+
+}
+.main2{
+    display: flex;
+    flex-direction: row;
+}
+.left,
+.right{
+    width:50%
+}
+.left p,
+.right p{
+     text-align: center;
+    color: cyan;
+}
+.left select,
+.right select{
+    border: 0;
+    border-radius: 5px;
+    background: #dfffa0;
+    color: blueviolet;
+    text-align: center;
+    padding-left: 50px;
+    width: 70%;
+}
+</style>
+<h1>Welcome ADMIN</h1>
+<div class="a">
+    <div class="main">
+    <div class="main1">
+    <a>Click here to view number of customers using the software</a>
+</div>
+        <div class="main2">
+    <div class="left">
+    <p>View Ratings and Reviews of the Restaurants</p>
+
+    <p>Select a Restaurant</p>
+    <select name="select" value="" size="1">
+        <option>Restaurant1</option>
+        <option>Restaurant2</option>
+        <option>Restaurant3</option>
+        <option>Restaurant4</option>
+        <option>Restaurant5</option>
+        <option>Restaurant6</option>
+    </select>
+</div>
+    <div class="right">
+
+    <p>View/Update details of the Restaurants</p>
+    <p>Select a Restaurant</p>
+<select name="select" value="" size="1">
+        <option>Restaurant1</option>
+        <option>Restaurant2</option>
+        <option>Restaurant3</option>
+        <option>Restaurant4</option>
+        <option>Restaurant5</option>
+        <option>Restaurant6</option>
+    </select>
+          </div>
+            <div class="right2">
+    <p>View/Update the details of Restaurant Managers</p>
+    <input type="submit" name="submit" value="submit" size="20px">
+        </div>
+    </div>
+        </div>
+
+</div>
+</body>
+</html>
